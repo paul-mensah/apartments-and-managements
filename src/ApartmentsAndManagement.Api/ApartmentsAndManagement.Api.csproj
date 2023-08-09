@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <NoWarn>$(NoWarn);1591</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3"/>
+        <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.3.0"/>
+        <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.3.0"/>
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.3.0"/>
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.3.0"/>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
+        <PackageReference Include="Mapster" Version="7.3.0"/>
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.0"/>
+        <PackageReference Include="NEST" Version="7.17.5"/>
+        <PackageReference Include="NEST.JsonNetSerializer" Version="7.17.5"/>
+        <PackageReference Include="Akka" Version="1.5.0"/>
+        <PackageReference Include="Akka.DI.AutoFac" Version="1.4.27"/>
+        <PackageReference Include="Akka.DI.Extensions.DependencyInjection" Version="1.4.22"/>
+        <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0"/>
+    </ItemGroup>
+    
+    <ItemGroup>
+        <Content Remove="ElasticsearchData\mgmt.json"/>
+        <EmbeddedResource Include="ElasticsearchData\mgmt.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </EmbeddedResource>
+        <Content Remove="ElasticsearchData\props.json"/>
+        <EmbeddedResource Include="ElasticsearchData\props.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </EmbeddedResource>
+    </ItemGroup>
+
+</Project>

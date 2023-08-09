@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8406B156-5D48-4E86-B3FF-1106EA70F7B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApartmentsAndManagement.Api", "src\ApartmentsAndManagement.Api\ApartmentsAndManagement.Api.csproj", "{F3DD5CEB-CC06-4DE9-B596-8E4A123E12A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3DD5CEB-CC06-4DE9-B596-8E4A123E12A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3DD5CEB-CC06-4DE9-B596-8E4A123E12A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3DD5CEB-CC06-4DE9-B596-8E4A123E12A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3DD5CEB-CC06-4DE9-B596-8E4A123E12A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F3DD5CEB-CC06-4DE9-B596-8E4A123E12A3} = {8406B156-5D48-4E86-B3FF-1106EA70F7B7}
+	EndGlobalSection
+EndGlobal
