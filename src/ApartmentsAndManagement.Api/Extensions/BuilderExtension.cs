@@ -29,9 +29,9 @@ public static class BuilderExtension
         try
         {
             using IServiceScope scope = serviceProvider.CreateScope();
-            ISearchService searchService = scope.ServiceProvider.GetRequiredService<ISearchService>();
+            IElasticsearchService elasticsearchService = scope.ServiceProvider.GetRequiredService<IElasticsearchService>();
 
-            await searchService.IndexDocuments();
+            await elasticsearchService.IndexDocuments();
         }
         catch (Exception e)
         {
